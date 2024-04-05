@@ -1,112 +1,120 @@
-<!--versão 2-->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Felipe</title>
 
-    <link rel="stylesheet" href="assets/estilo/main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Salsa&display=swap" rel="stylesheet">
+          
+
 </head>
 <body>
-    <div>
-        <div id="menu">
-            <nav>
-                <h1>Felipe Cesar Rodrigues</h1>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="#sobre-mim">Sobre Mim</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projeto">Projetos</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!--Barra de navegação-->
+    <header>
+        <nav>
+            <div class="Logo">
+                <h3 class="flex"><a href="index.html">FR</a></h3>
+            </div>
+            <ul>
+                <li class="flex nav-project"><a href="#project">Projetos</a></li>
+                <li class="flex nav-photo"><a href="#photos">Fotos</a></li>
 
-        <div id="content">
-            <!--Sobre mim-->
-            <div id="sobre-mim" class="alguma-coisa">
-                <div class="information">
-                    <h2>➤ Quem sou eu?</h2>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="home">
+            <div class="information">
+                <div >
+                    <h1>Olá! Sou Felipe Rodrigues</h1>
                     <br>
-                    <img src="assets/image/eu.jpg" alt="eu, Felipe" id="eu">
-                    <p>Olá! Meu nome é Felipe Cesar Rodrigues, tenho 19 anos e sou natural de São Bento do Sapucaí - SP, mas também tenho vínculos com a encantadora Luminosa, em Brazópolis - MG. Atualmente, estou no terceiro semestre do curso de Análise e Desenvolvimento de Sistemas, uma jornada empolgante em busca de conhecimento e crescimento profissional.</p>
+                    <p>Um estudante de análise e desenvolvimento de sistemas.</p>
+                    <p>Sou apaixonado por programação, então estou sempre buscando aprender mais.</p>
+                    <p>Ah, eu também gosto muito de jogos, animes e trilhas.</p>
                     <br>
-                    <p>Em resumo, sou um estudante apaixonado em busca de conhecimento e crescimento. Minha visão de vida e determinação são os pilares que orientam meu caminho em direção ao sucesso.</p>
-                    <br>
-                    <h3>Crenças</h3>
-                    <p>Acredito firmemente que sou o arquiteto do meu próprio destino. Cada ação, seja ela positiva ou desafiadora, é fruto das decisões que tomo. Uma citação que me inspira profundamente é de Mewtwo: "As circunstâncias do nascimento de alguém são irrelevantes. É o que você faz com o dom da vida que determina quem você é."</p>
-                    <br>
-                    <h3>Objetivos e comportamento</h3>
-                    <p>Meu grande objetivo é me tornar o melhor naquilo que escolher fazer e conquistar todos os sonhos que sempre almejei. Sou conhecido por minha natureza quieta e observadora. Gosto de ficar no meu canto, observando as nuances das pessoas ao meu redor. Prefiro manifestar minha opinião apenas quando sinto que é necessário.</p>
-                    <br>
-                    <p>No ambiente profissional, mantenho a calma diante dos desafios. Raramente perco a compostura, uma característica que acredito ser fundamental para lidar com situações complexas. Estou sempre determinado a manter uma postura serena, mesmo quando confrontado por adversidades.</p>
-                    <br>
-                    <h3>Educação</h3>
-                    <p>No âmbito acadêmico, estou comprometido com a excelência, atualmente focado no curso de Análise e Desenvolvimento de Sistemas. Embora minha jornada profissional esteja apenas começando, estou animado para explorar as oportunidades que o futuro reserva.</p>
-                    <br>
-                    
+
+                    <div class="contact">   
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/_feliippe__/" title="Link para o meu instagram">
+                                <img src="images/instagram.svg" alt="Foto com link para o meu instagram">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/in/felipe-cesar-69309b199/" title="Link para o meu linkedin">
+                                <img src="images/linkedin.svg" alt="Foto com link para o meu linkedin">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/Kiy0p0N" title="Link para o meu Github">
+                                <img src="images/github.svg" alt="Foto com link para o meu Github">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://wa.me/5535910144269" title="Link para o meu whatsapp">
+                                <img src="images/whatsapp.svg" alt="Foto com link para o meu whatsapp">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+            
+            </div>
 
-                <!--Hobbies-->
-                <div class="information">
-                    <h2>➤ Hobbies: Uma Jornada de Diversidade e Paixões</h2>
-                    <br>
-                    <h3>Jogar Video Games:</h3>
-                    <p>
-                        Amante de jogos virtuais, encontro na experiência dos video games uma forma cativante de escapar para mundos fantásticos. A paixão pelos jogos não apenas me proporciona diversão, mas também desafia minha mente e habilidades estratégicas.</p>
-                    <br>
-
-                    <h3>Caminhar e Fazer Trilhas com Hades:</h3>
-                    
-                    <img src="assets/image/caminhada.jpg" alt="Caminhada matinal com o Hades, 06-02-2024" id="hades">
-                        
-                    <p>
-                        Ao lado do meu fiel companheiro, Hades, explorar trilhas e caminhar pela natureza é mais do que um hobby; é uma forma de reenergizar minha mente e corpo. Cada passo nas trilhas não só proporciona exercício físico, mas também momentos de paz e reconexão com a beleza natural.</p>
-                    <br>
-                    <p>
-                        Tenho memórias marcantes de uma infância cercada pela natureza. Durante uma trilha com meu tio, a surpresa de avistar macacos selvagens em seu habitat natural deixou uma impressão duradoura, reforçando meu respeito e admiração pela vida selvagem.</p>
-                    <br>
-
-                    <h3>Explorando o Universo Tecnológico:</h3>
-                    <p>
-                        Assisto avidamente a vídeos sobre novas tecnologias, especialmente aquelas relacionadas a robótica. Meu entusiasmo por aprender sobre as últimas inovações e avanços na inteligência artificial, especialmente programada em Python, é uma paixão que alimenta meus planos futuros.</p>
-                    <br>
-
-                    <h3>Astros Celestes e Fascínio pelo Cosmos:</h3>
-                    <p>
-                        O fascínio pelo desconhecido transcende a atmosfera terrestre. A contemplação dos astros celestes e a exploração de conhecimentos sobre o cosmos são fontes de inspiração e maravilha que enriquecem meu entendimento do universo.</p>
-                    <br>
-
-                    <h3>Futebol e Paixão Corinthiana:</h3>
-                    <p>
-                        Como um verdadeiro apaixonado por futebol, meu coração bate forte pelo Sport Club Corinthians Paulista. Ser corintiano é mais do que torcer; é uma tradição enraizada em meu ser desde o nascimento, e a lealdade ao time é algo que carregarei para toda a vida.</p>
-                    
-                    
-                </div>
-                                            
-                <!--Contatos-->
-                <div class="information">
-                    <h2>➤ Contato</h2>
-                    <p><a href="https://www.instagram.com/_feliippe__/"><img src="assets/image/instagram.jpeg" alt="Instagram"></a></p>
-                    <p><a href="https://www.facebook.com/felipe.cesar.7334"><img src="assets/image/facebook.jpeg" alt="Facebook"></a></p>
-                    <p><a href="https://api.whatsapp.com/send/?phone=5535910144269&"><img src="assets/image/Whatsapp.jpeg" alt="Whatsapp"></a></p>
-                    <p><a href="https://www.linkedin.com/in/felipe-cesar-69309b199/"><img src="assets/image/LinkedIn.jpeg" alt="LinkedIn"></a></p>
-                    <p><a href="https://github.com/Kiy0p0N"><img src="assets/image/github.jpeg" alt="Github"></a></p>
-                    <p><a href="mailto: felpcsarodrigues@gmail.com"><img src="assets/image/gmail.jpeg" alt="Gmail"></a></p>
-                </div>
-                                        
+            <div class="cat-gif flex">
+                <img class="coding-cat" src="images/Coding_Cat.gif" alt="">
+            </div>
         </div>
 
-        <!--Habilidades-->
-        <div id="habilidades" class="alguma-coisa">
-            <h1>Habilidades</h1>
+        <div class="project" id="project">
+
+            <div class="dices back-projct">
+                <a href="https://kiy0p0n.github.io/Dices/" title="Dices game">
+                    <img src="images/dices.png" alt="">
+                </a>
+            </div>
+            
+            <div class="tin-dog back-projct">
+                <a href="https://kiy0p0n.github.io/TinDog/" title="Tin-Dog">
+                    <img src="images/tin-dog.png" alt=""> 
+                </a>
+            </div>
+            
+            
+            <div class="drum-kit back-projct">
+                <a href="https://kiy0p0n.github.io/Drum-kit/" title="Drum kit">
+                    <img src="images/drum-kit.png" alt="">
+                </a>
+            </div>
+            
+            
+
         </div>
 
-        <!--Projetos-->
-        <div id="projetos" class="alguma-coisa">
-            <h1>Projetos</h1>
+
+
+        <div class="photos" id="photos">
+            <div class="picture">
+                <img id="picture" src="images/share-1.jpg" alt="">
+            </div>
+            <div class="button-left"></div>
+            <div class="button-right"></div>
         </div>
+
     </div>
+    
+
+    <script src="index.js"></script>
 </body>
 </html>
