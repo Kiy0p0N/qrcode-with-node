@@ -13,6 +13,7 @@ function changePhoto (share){
         var photo = "images/share-" + share + ".jpg";
         document.querySelector("#picture").setAttribute("src", photo);
 
+        console.log("share-" + share);
     })
 
     document.querySelector(".button-left").addEventListener("click", function(){
@@ -24,7 +25,11 @@ function changePhoto (share){
         }
         var photo1 = "images/share-" + share + ".jpg";
         document.querySelector("#picture").setAttribute("src", photo1);
+
+        console.log("share-" + share);
     })
+
+    
 
 }
 
