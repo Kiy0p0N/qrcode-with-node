@@ -59,7 +59,7 @@ h1{
 
 p{
     font-size: 1.3rem;
-    font-family: "display", cursive;
+    font-family: "display", Arial, Helvetica, sans-serif;
 }
 
 ul{
@@ -152,7 +152,6 @@ ul{
     border-radius: 10px;
     max-width: 70%;
 }
-
 
 .dices{
     grid-column: 1/2;
