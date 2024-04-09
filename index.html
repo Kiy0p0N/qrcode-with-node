@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Felipe</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Salsa&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
           
 
 </head>
@@ -17,8 +22,8 @@
     <!--Barra de navegação-->
     <header>
         <nav>
-            <div class="Logo">
-                <h3 class="flex"><a href="index.html">FR</a></h3>
+            <div class="logo">
+                <h3><a href="#">FR</a></h3>
             </div>
             <ul>
                 <li class="flex nav-project"><a href="#project">Projetos</a></li>
@@ -33,9 +38,9 @@
         <div class="home">
             <div class="information">
                 <div >
-                    <h1>Olá! Sou Felipe Rodrigues</h1>
+                    <h1>Olá! Eu me chamo Felipe Cesar Rodrigues</h1>
                     <br>
-                    <p>Um estudante de análise e desenvolvimento de sistemas.</p>
+                    <p>Sou um estudante de análise e desenvolvimento de sistemas.</p>
                     <p>Sou apaixonado por programação, então estou sempre buscando aprender mais.</p>
                     <p>Ah, eu também gosto muito de jogos, animes e trilhas.</p>
                     <br>
@@ -43,25 +48,25 @@
                     <div class="contact">   
                         <ul>
                             <li>
-                                <a href="https://www.instagram.com/_feliippe__/" title="Link para o meu instagram">
+                                <a href="https://www.instagram.com/_feliippe__/" title="Link para o meu instagram" target="_blank">
                                 <img src="images/instagram.svg" alt="Foto com link para o meu instagram">
                                 </a>
                             </li>
 
                             <li>
-                                <a href="https://www.linkedin.com/in/felipe-cesar-69309b199/" title="Link para o meu linkedin">
+                                <a href="https://www.linkedin.com/in/felipe-cesar-69309b199/" title="Link para o meu linkedin" target="_blank">
                                 <img src="images/linkedin.svg" alt="Foto com link para o meu linkedin">
                                 </a>
                             </li>
 
                             <li>
-                                <a href="https://github.com/Kiy0p0N" title="Link para o meu Github">
+                                <a href="https://github.com/Kiy0p0N" title="Link para o meu Github" target="_blank">
                                 <img src="images/github.svg" alt="Foto com link para o meu Github">
                                 </a>
                             </li>
 
                             <li>
-                                <a href="https://wa.me/5535910144269" title="Link para o meu whatsapp">
+                                <a href="https://wa.me/5535910144269" title="Link para o meu whatsapp" target="_blank">
                                 <img src="images/whatsapp.svg" alt="Foto com link para o meu whatsapp">
                                 </a>
                             </li>
@@ -77,24 +82,52 @@
             </div>
         </div>
 
-        <div class="project" id="project">
+        <div id="project">
 
-            <div class="dices back-projct">
-                <a href="https://kiy0p0n.github.io/Dices/" title="Dices game">
-                    <img src="images/dices.png" alt="">
-                </a>
+            <div class="project">
+
+
+                <div class="active">
+                    <a href="https://github.com/Kiy0p0N/Drum-kit" target="_blank">
+                        <img src="images/drum-kit.png" alt="">
+                    </a>
+                </div>
+                    
+                <div class="active">
+                    <a href="https://github.com/Kiy0p0N/Dices" target="_blank">
+                        <img src="images/dices.png" alt="">
+                    </a>
+                </div>
+                    
+                <div class="active">
+                    <a href="https://github.com/Kiy0p0N/TinDog" target="_blank">
+                        <img src="images/tin-dog.png" alt="">
+                    </a>
+                </div>
+                    
+
+                <div class="desabled" id="desabled">
+
+                    <div class="active">
+                        <img src="images/em-breve.png" alt="">
+                    </div>
+                    
+                    <div class="active">
+                        <img src="images/em-breve.png" alt="">
+                    </div>
+                    
+                    <div class="active">
+                        <img src="images/em-breve.png" alt="">
+                    </div>
+                </div>
+                
             </div>
+        
             
-            <div class="tin-dog back-projct">
-                <a href="https://kiy0p0n.github.io/TinDog/" title="Tin-Dog">
-                    <img src="images/tin-dog.png" alt=""> 
-                </a>
-            </div>
-            
-            
-            <div class="drum-kit back-projct">
-                <a href="https://kiy0p0n.github.io/Drum-kit/" title="Drum kit">
-                    <img src="images/drum-kit.png" alt="">
+            <div class="btn">
+                <a href="#project">
+
+                    <button id="btn">Ver mais</button>
                 </a>
             </div>
             
@@ -104,14 +137,29 @@
 
 
 
-        <div class="photos" id="photos">
-            <div class="picture">
-                <img id="picture" src="images/share-1.jpg" alt="">
-            </div>
-            <div class="button-left"></div>
-            <div class="button-right"></div>
-        </div>
+        <div id="photos">
+            <div class="photos">
 
+                <div class="picture">
+                    <img id="picture" src="images/share-1.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="button-left">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span>
+            </div>
+
+            <div class="button-right">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span>
+            </div> 
+
+        </div>
+            
     </div>
     
 

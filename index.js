@@ -37,3 +37,37 @@ var i = 1;
 
 changePhoto(i);
 
+
+
+
+//see more
+
+function seeMore (btn){
+
+    document.getElementById("btn").addEventListener("click", function(){
+        
+        if (btn == 0){
+
+            document.querySelector(".project #desabled").setAttribute("id", "active");
+
+            document.querySelector("#btn").innerHTML = "Ver Menos";
+
+            btn++;
+            
+        } else {
+            document.querySelector(".project #active").setAttribute("id", "desabled");
+
+            document.querySelector("#btn").innerHTML = "Ver Mais";
+
+            btn = 0;
+
+        }
+
+
+    })
+    
+}
+
+var btn = 0;
+
+seeMore(btn);
