@@ -6,10 +6,13 @@ html{
 }
 
 body{
+    
     background-image: linear-gradient(to right bottom, #000, #0a2444, #047ba2);
     background-position: center;
     background-attachment: fixed;
 }
+
+
 
 .flex{
     display: flex;
@@ -25,6 +28,7 @@ header{
     align-items: center;
     justify-content: center;
     position: fixed;
+    font-family: "salsa", sans-serif;
 }
 
 header nav{
@@ -46,6 +50,7 @@ header nav .logo{
 }
 
 header nav .logo h3{
+    font-size: 1.5rem;
     transition: 0.2s;
 }
 
@@ -68,25 +73,23 @@ header nav ul .nav-photos{
     grid-column: 2/3;
 }
 
-header nav ul li{
+header nav ul li a{
     font-size: 1.2rem;
     transition: 0.2s;
 }
 
-header nav ul li :hover{
+header nav ul li a:hover{
     transform: scale(1.2);
 }
 
 .container{
     max-width: 1200px;
-    
     margin: 0 auto;
 }
 
 .container .home{
-    grid-row: 1/2;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -130,7 +133,7 @@ header nav ul li :hover{
 }
 
 .container .home .cat-gif{
-    width: 30%;
+    width: 300px;
 }
 
 

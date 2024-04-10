@@ -7,8 +7,19 @@
 }
 
 a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
+}
+
+h1{
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight:900;
 }
 
 ul{
