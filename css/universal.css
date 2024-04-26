@@ -8,18 +8,21 @@
 
 html{
     scroll-behavior: smooth;
+    text-shadow: #000 0px 1px;
 }
 
 h1{
     color: #6CD9D9;
     font-size: 2.5rem;
     font-weight: 900;
+    font-family: sans-serif;
 }
 
 h2{
     color: #6CD9D9;
     font-weight: 900;
     font-size: 2rem;
+    font-family: sans-serif;
 }
 
 p{
@@ -28,9 +31,11 @@ p{
     margin: 3% 0;
     font-weight:500;
     font-size: 1.3rem;
+    font-family: sans-serif;
 }
 
 a{
     text-decoration: none;
     color: #fff;
+    font-family: sans-serif;
 }

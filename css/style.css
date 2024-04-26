@@ -238,7 +238,8 @@ header nav ul li a:hover{
 
 #project .btn button{
     width: 70px;
-    height: 40px;
+    height: 40px;background-color: #444444;
+    color: #F2B950;
     border-radius: 50px;
     font-weight: 600;
     cursor: not-allowed;
