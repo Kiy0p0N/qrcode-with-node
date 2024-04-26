@@ -1,31 +1,36 @@
 *{
     margin: 0;
     padding: 0;
-    outline: none;
+    outline: 0;
     border: none;
     box-sizing: border-box;
 }
 
-a{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    color: white;
+html{
+    scroll-behavior: smooth;
 }
 
 h1{
-    font-family: sans-serif;
+    color: #6CD9D9;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
+h2{
+    color: #6CD9D9;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
 p{
-    font-family: sans-serif;
-    font-weight:900;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 3% 0;
+    font-weight:500;
+    font-size: 1.3rem;
 }
 
-ul{
-    list-style: none;
-}
-
-img{
-    max-width: 100%;
+a{
+    text-decoration: none;
+    color: #fff;
 }

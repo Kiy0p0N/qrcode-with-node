@@ -1,73 +1,74 @@
+
+//change theme
+function changeTheme(){
+    let theme = 0;
+    $("#coding-cat").click(function(){
+        setTimeout(function(){
+            if(theme === 0){
+                $("body").removeClass("dark-theme").addClass("light-theme");
+                
+                $("#arrow-left").attr("src", "image/arrow_back-dark.svg");
+                $("#arrow-right").attr("src", "image/arrow_forward-dark.svg");
+
+
+                //change theme svg images
+                setTimeout(function(){
+                    
+                    $("#github").attr("src", "image/github-dark.svg");
+                    $("#instagram").attr("src", "image/instagram-dark.svg");
+                    $("#linkedin").attr("src", "image/linkedin-dark.svg");
+                    $("#whatsapp").attr("src", "image/whatsapp-dark.svg");
+                }, 100);
+
+                theme++;
+
+            } else {
+                $("body").removeClass("light-theme").addClass("dark-theme");
+
+                
+                $("#arrow-left").attr("src", "image/arrow_back-light.svg");
+                $("#arrow-right").attr("src", "image/arrow_forward-light.svg");
+
+                //change theme svg images
+                setTimeout(function(){
+                    
+                    $("#github").attr("src", "image/github-light.svg");
+                    $("#instagram").attr("src", "image/instagram-light.svg");
+                    $("#linkedin").attr("src", "image/linkedin-light.svg");
+                    $("#whatsapp").attr("src", "image/whatsapp-light.svg");
+                },100);
+
+                theme = 0;
+            }
+
+        }, 100);
+    })
+}
+
+changeTheme();
+
 //change photo
+function changePhoto(){
+    let photo = 1;
+    $("#arrow-left").click(function(){
 
-function changePhoto (share){
-
-    
-    document.querySelector(".button-right").addEventListener("click", function(){
-
-        if(share <= 5){
-            share++;
-        } else {
-            share = 1;
+        if(photo >= 2){
+            photo--;
+        } else{
+            photo = 6;
         }
-        var photo = "images/share-" + share + ".jpg";
-        document.querySelector("#picture").setAttribute("src", photo);
+        let actualPhotoLeft = "image/share-" + photo + ".jpg";
+        $("#photo img").attr("src", actualPhotoLeft);
+    });
+    $("#arrow-right").click(function(){
 
-        console.log("share-" + share);
-    })
-
-    document.querySelector(".button-left").addEventListener("click", function(){
-
-        if(share >= 2){
-            share--;
-        } else {
-            share = 6;
+        if(photo <= 5){
+            photo++;
+        } else{
+            photo = 1;
         }
-        var photo1 = "images/share-" + share + ".jpg";
-        document.querySelector("#picture").setAttribute("src", photo1);
-
-        console.log("share-" + share);
-    })
-
-    
-
+        let actualPhotoRight = "image/share-" + photo + ".jpg";
+        $("#photo img").attr("src", actualPhotoRight);
+    });
 }
-
-var i = 1;
-
-changePhoto(i);
-
-
-
-
-//see more
-
-function seeMore (btn){
-
-    document.getElementById("btn").addEventListener("click", function(){
-        
-        if (btn == 0){
-
-            document.querySelector(".project #desabled").setAttribute("id", "active");
-
-            document.querySelector("#btn").innerHTML = "Ver Menos";
-
-            btn++;
-            
-        } else {
-            document.querySelector(".project #active").setAttribute("id", "desabled");
-
-            document.querySelector("#btn").innerHTML = "Ver Mais";
-
-            btn = 0;
-
-        }
-
-
-    })
-    
-}
-
-var btn = 0;
-
-seeMore(btn);
+changePhoto();
