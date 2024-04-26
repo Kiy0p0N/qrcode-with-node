@@ -146,8 +146,14 @@ header nav ul li a:hover{
     justify-content: center;
 }
 
+#about .photo  #photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #about .photo  #photo img{
-    width: 600px;
+    width: 90%;
 }
 
 #about .arrow{
