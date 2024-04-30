@@ -1,17 +1,17 @@
 .dark-theme{
-    background-color: #000;
-    color: #fff;
+    background-color: #02070D;
+    color: #93B3BF;
 }
 
 .light-theme{
-    background-color: #fff;
-    color: #000;
+    background-color: #93B3BF;
+    color: #02070D;
 }
 
 
 /* menu */
 header{
-    background-color: #444444;
+    background-color: #93B3BF;
     width: 100%;
     height: 50px;
     max-height: 50px;
@@ -37,7 +37,7 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
-    color: #F2B950;
+    color: #122A40;
     font-weight: 600;
     transition: 0.2s;
 }
@@ -70,7 +70,7 @@ header nav ul li a:hover{
 }
 
 #home .start #name{
-    color: #9B72F2;
+    color: #3C5E73;
 }
 
 #home .start .contact{
