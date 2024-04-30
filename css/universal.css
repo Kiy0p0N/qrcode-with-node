@@ -11,6 +11,10 @@ html{
     text-shadow: #000 0px 1px;
 }
 
+body{
+    transition: 1s ease;
+}
+
 h1{
     color: #193B59;
     font-size: 2.5rem;
@@ -36,6 +40,6 @@ p{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #193B59;
     font-family: sans-serif;
 }

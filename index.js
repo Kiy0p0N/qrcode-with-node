@@ -1,8 +1,11 @@
 //press cat
 $("#coding-cat").click(function(){
-	
+	console.log("Clicou no gato!");
 	littleCat();
+	changeBackground();
 	mediaColor();
+
+	
 
 })
 
@@ -45,6 +48,28 @@ function littleCat(){
 }
 
 
+// change background color
+function changeBackground() {
+    var currentTheme = localStorage.getItem('theme');
+    console.log("Tema atual:", currentTheme);
+
+    if (currentTheme === 'light-theme') {
+        localStorage.setItem('theme', 'dark-theme');
+    } else {
+        localStorage.setItem('theme', 'light-theme');
+    }
+
+    applyTheme();
+
+}
+
+function applyTheme() {
+    var currentTheme = localStorage.getItem('theme')  || 'light-theme';
+    console.log("Aplicando tema:", currentTheme);
+    $("body").attr("class", currentTheme);
+	$("header").attr("class", currentTheme);
+	$(".btn button").attr("class", currentTheme);
+}
 
 
 
@@ -53,15 +78,15 @@ function mediaColor(){
 	if($("body").attr("class") === "light-theme"){
 
 		$("#github").attr("src", "image/github-dark.svg");
-        $("#instagram").attr("src", "image/instagram-dark.svg");
-        $("#linkedin").attr("src", "image/linkedin-dark.svg");
-        $("#whatsapp").attr("src", "image/whatsapp-dark.svg");
+		$("#instagram").attr("src", "image/instagram-dark.svg");
+		$("#linkedin").attr("src", "image/linkedin-dark.svg");
+		$("#whatsapp").attr("src", "image/whatsapp-dark.svg");
 
 	} else {
 
 		$("#github").attr("src", "image/github-light.svg");
-        $("#instagram").attr("src", "image/instagram-light.svg");
-        $("#linkedin").attr("src", "image/linkedin-light.svg");
-        $("#whatsapp").attr("src", "image/whatsapp-light.svg");
+		$("#instagram").attr("src", "image/instagram-light.svg");
+		$("#linkedin").attr("src", "image/linkedin-light.svg");
+		$("#whatsapp").attr("src", "image/whatsapp-light.svg");
 	}
 }
