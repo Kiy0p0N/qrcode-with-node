@@ -16,7 +16,7 @@ $("#arrow-left").click(function(){
 	if(photo >= 2){
         photo--;
     } else{
-        photo = 6;
+        photo = 8;
     }
     let actualPhotoLeft = "image/share-" + photo + ".jpg";
     $("#photo img").attr("src", actualPhotoLeft);
@@ -24,7 +24,7 @@ $("#arrow-left").click(function(){
     
 $("#arrow-right").click(function(){
 
-    if(photo <= 5){
+    if(photo <= 7){
         photo++;
     } else{
         photo = 1;
