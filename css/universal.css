@@ -8,7 +8,6 @@
 
 html{
     scroll-behavior: smooth;
-    text-shadow: #000 0px 1px;
 }
 
 body{
@@ -33,7 +32,7 @@ p{
     font-size: 1rem;
     line-height: 1.4rem;
     margin: 3% 0;
-    font-weight:500;
+    font-weight: 700;
     font-size: 1.3rem;
     font-family: sans-serif;
 }
