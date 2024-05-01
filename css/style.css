@@ -70,6 +70,7 @@ header nav ul li a:hover{
 
 #home .start #name{
     color: #3C5E73;
+    cursor: help;
 }
 
 #home .start .contact{
@@ -232,27 +233,7 @@ header nav ul li a:hover{
     transform: scale(1.06);
 }
 
-#project .btn{
-    grid-row: 3/4;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#project .btn button{
-    width: 70px;
-    height: 40px;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: not-allowed;
-    transition: 0.3s;
-    background-color: #3C5E73;
-}
-
-#project .btn button:hover{
-    transform: scale(1.1);
-}
 
 /*footer*/
 footer{

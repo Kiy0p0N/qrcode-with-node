@@ -2,10 +2,8 @@
 $("#coding-cat").click(function(){
 	console.log("Clicou no gato!");
 	littleCat();
-	changeBackground();
-	mediaColor();
-
-	
+	backgroundChange();
+    mediaColor();
 
 })
 
@@ -49,26 +47,22 @@ function littleCat(){
 
 
 // change background color
-function changeBackground() {
-    var currentTheme = localStorage.getItem('theme');
-    console.log("Tema atual:", currentTheme);
+function backgroundChange(){
+    
+    var actualBckg = "light-theme";
 
-    if (currentTheme === 'light-theme') {
-        localStorage.setItem('theme', 'dark-theme');
-    } else {
-        localStorage.setItem('theme', 'light-theme');
+    if($("body").attr("class")==="light-theme"){
+        $("body").removeClass("light-theme");
+        $("header").removeClass("light-theme");
+        actualBckg = "dark-theme";
+    } else{
+        $("body").removeClass("dark-theme");
+        $("header").removeClass("dark-theme");
+        actualBckg = "light-theme";
     }
 
-    applyTheme();
-
-}
-
-function applyTheme() {
-    var currentTheme = localStorage.getItem('theme')  || 'light-theme';
-    console.log("Aplicando tema:", currentTheme);
-    $("body").attr("class", currentTheme);
-	$("header").attr("class", currentTheme);
-	$(".btn button").attr("class", currentTheme);
+    $("body").addClass(actualBckg);
+    $("header").addClass(actualBckg);
 }
 
 
@@ -90,3 +84,20 @@ function mediaColor(){
 		$("#whatsapp").attr("src", "image/whatsapp-light.svg");
 	}
 }
+
+
+
+
+
+
+
+// special message
+$("#name").click(function(){
+    var question = prompt("What is the password? ");
+    var password = "iloveu";
+    if(question === password){
+        alert("Sorry, but my heart already has an owner!");
+    } else{
+        alert("Not.");
+    }
+})
