@@ -24,12 +24,19 @@ $(document).ready(function(){
         updatePhoto();
     })
 
-    $("#right").click(function(){
+    function nextPhoto(){
         $("#front").attr("src", photoRight);
         $("#left").attr("src", photoFront);
         $("#right").attr("src", photoHidden);
         $("#hidden").attr("src", photoLeft);
 
         updatePhoto();
+    }
+
+    $("#right").click(function(){
+        nextPhoto();
     })
+
+    // passa as fotos automaticamente a cada 5 segundos
+    setTimeout(nextPhoto, 5000);
 })
