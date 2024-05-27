@@ -33,7 +33,7 @@ nav{
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
 }
 
 .logo img{
@@ -60,6 +60,7 @@ nav{
     width: 40px;
     cursor: pointer;
     padding-right: 10px;
+    transition: 0.5s;
 }
 
 .menu ul{
@@ -92,6 +93,10 @@ nav{
 @media (max-width:800px){
     .menu .hamburger{
         display: flex;
+    }
+
+    .menu .hamburger img:hover{
+        transform: scale(1.1);
     }
 
     .menu{
