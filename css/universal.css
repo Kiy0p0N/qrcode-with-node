@@ -111,6 +111,7 @@ nav{
         display: flex;
         align-items: center;
         justify-content: left;
+        transition: 0.5s;
     }
 
     .menu .nav-links li:hover{
