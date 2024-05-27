@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #450d4e;
+    background-color: #444444;
     width: 100%;
     min-height: 100vh;
 }
@@ -114,7 +114,7 @@ nav{
     }
 
     .menu .nav-links li:hover{
-        background-color: #B796D9;
+        background-color: #757575;
     }
 
     .nav-links.open-menu{
