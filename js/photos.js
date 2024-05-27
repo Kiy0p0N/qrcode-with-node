@@ -38,5 +38,5 @@ $(document).ready(function(){
     })
 
     // passa as fotos automaticamente a cada 5 segundos
-    setTimeout(nextPhoto, 5000);
+    setInterval(nextPhoto, 5000);
 })
