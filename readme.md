@@ -35,4 +35,4 @@ Um gerador de QR Code simples construído com Node.js e EJS. Este projeto permit
     ```bash
     npm start
 
-4. Acesse a aplicação em http://localhost:3000.
+4. Acesse a aplicação em http://localhost:3000 .
