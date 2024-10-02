@@ -1,6 +1,40 @@
 $(document).ready(function(){
-    $(".cat img").click(function(){ 
-        const catSound = new Audio("assets/sound/cat-sound.mp3");
-        catSound.play();
+
+    // Menu hamburger
+    const hamburger = $(".hamburger");
+    const navLinks = $(".nav-links");
+
+    hamburger.click(()=>{
+        navLinks.toggleClass('active');
+
+        hamburger.toggleClass('rotate');
+        hamburger.toggleClass('reverse-rotate');
     })
+
+    $('.nav-links a').click(()=>{
+        navLinks.removeClass('active');
+
+        hamburger.toggleClass('rotate');
+        hamburger.toggleClass('reverse-rotate');
+    })
+
+    $('.logo a').click(()=>{
+        navLinks.removeClass('active')
+    })
+
+
+    // More about
+    const aboutMe = $('.about-me')
+    const contactMe = $('.contact')
+
+    aboutMe.hover(()=>{
+        $('.about-me .more-link').toggleClass('test');
+    })
+
+    contactMe.hover(()=>{
+        $('.contact .more-link').toggleClass('test');
+    })
+
+    
+    
 })
